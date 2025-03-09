@@ -17,7 +17,7 @@ class _ChatPageState extends State<ChatPage> {
 
   @override
   void initState() {
-    _chatController = TextEditingController();
+    _chatController = TextEditingController(); 
     super.initState();
   }
 
