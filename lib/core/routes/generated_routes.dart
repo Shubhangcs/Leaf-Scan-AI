@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:leaf_scan/features/authentication/cubit/login_cubit.dart';
+import 'package:leaf_scan/features/authentication/cubit/register_cubit.dart';
 import 'package:leaf_scan/features/authentication/pages/login_page.dart';
 import 'package:leaf_scan/features/authentication/pages/register_page.dart';
 import 'package:leaf_scan/features/chat/pages/chat_page.dart';
@@ -14,11 +17,17 @@ class Routes {
         );
       case "/login":
         return MaterialPageRoute(
-          builder: (context) => LoginPage(),
+          builder: (context) => BlocProvider(
+            create: (context) => LoginCubit(),
+            child: LoginPage(),
+          ),
         );
       case "/register":
         return MaterialPageRoute(
-          builder: (context) => RegisterPage(),
+          builder: (context) => BlocProvider(
+            create: (context) => RegisterCubit(),
+            child: RegisterPage(),
+          ),
         );
       case "/home":
         return MaterialPageRoute(

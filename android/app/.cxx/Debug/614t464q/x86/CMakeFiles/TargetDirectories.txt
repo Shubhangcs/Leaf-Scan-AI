@@ -1,0 +1,2 @@
+/home/vsense/Documents/flutter/Leaf-Scan-AI/android/app/.cxx/Debug/614t464q/x86/CMakeFiles/edit_cache.dir
+/home/vsense/Documents/flutter/Leaf-Scan-AI/android/app/.cxx/Debug/614t464q/x86/CMakeFiles/rebuild_cache.dir

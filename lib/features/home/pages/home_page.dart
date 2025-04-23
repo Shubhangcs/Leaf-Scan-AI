@@ -110,7 +110,9 @@ class _HomePageState extends State<HomePage> {
                 height: 30,
               ),
               CustomCard(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, "/chat");
+                },
                 leading: Icon(
                   Icons.gesture_rounded,
                   color: AppColors.greenColor,
