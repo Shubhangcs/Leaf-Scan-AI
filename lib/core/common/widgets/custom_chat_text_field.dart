@@ -6,13 +6,15 @@ class CustomChatTextField extends StatefulWidget {
   final TextEditingController controller;
   final String hintText;
   final Icon icon;
-  final VoidCallback suffixOnPressed;
+  final VoidCallback? suffixOnPressed;
+  final FocusNode? focusNode;
   const CustomChatTextField({
     super.key,
     required this.controller,
     required this.hintText,
     required this.icon,
     required this.suffixOnPressed,
+    this.focusNode,
   });
 
   @override
@@ -25,6 +27,7 @@ class _CustomChatTextFieldState extends State<CustomChatTextField> {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: widget.controller,
+      focusNode: widget.focusNode,
       autocorrect: true,
       cursorColor: AppColors.greenColor,
       cursorErrorColor: AppColors.greenColor,

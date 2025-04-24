@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:leaf_scan/core/common/widgets/custom_app_bar.dart';
 import 'package:leaf_scan/features/entry_screens/widgets/entry_page_view.dart';
 
 class EntryPage extends StatefulWidget {
